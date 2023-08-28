@@ -1,0 +1,18 @@
+{
+  "name": "CODE_SEARCH",
+  "displayName": "Code Search",
+  "description": "The companion can search for code on GitHub.",
+  "skill": "CODE_SEARCH",
+  "prompt": "You have the ability to search Github for code. The user will occasionally ask you to search for code.  For example, 'Show me Events.tsx on Github' or 'What does the code for the ChatLog look like?'",
+  "value": "Show me Events.tsx on Github",
+  "formats": {
+		"standard": "{{user}} is looking for code: {{{formatForJSON value}}}"
+	},
+  "handlerHook": "codesearch:handle_code_search_skill",
+
+  "hack_prompt": "You want to search for code on GitHub when the user asks you to show them the code for a specific query",
+  "hack_pasttense": "Here's some code I found on GitHub:",
+  "hack_usage": "Based on the conversation, especially the users last request. Choose a search query to look up on GitHub. Be sure to put the search query in curly brackets '{}' for easy parsing. For example: {event.HomeTeam} or {Events.tsx}.  DO NOT PASS ANY OTHER INFORMATION JUST THE QUERY.",
+  "hack_delay": false,
+  "hack_desc": "Unlike other AI chatbots, with this skill you have information and authentic knowledge about code on GitHub. You can give factual information about it. You can look up information and give details about code when a user asks for it"
+}

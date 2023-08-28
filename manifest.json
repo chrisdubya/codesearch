@@ -1,0 +1,21 @@
+{
+  "name": "codesearch",
+  "title": "Codesearch",
+  "description": "Gives the companion to search Github repos for the given parameter",
+  "authors": [
+    {
+      "name": "Chris Williams",
+      "email": "chriscancodethat@gmail.com",
+      "url": "https://chriscancodethat.xyz"
+    },
+    {
+      "name": "Webaverse",
+      "email": "support@webaverse.com",
+      "url": "https://www.moemate.io"
+    }
+  ],
+  "version": "1.0",
+  "skills": ["skills/codesearch.json.hbs"],
+  "scripts": ["scripts/codesearch.js"],
+  "components": ["components/CodeSearchSettings.jsx"]
+}
