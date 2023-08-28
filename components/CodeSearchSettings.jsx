@@ -41,7 +41,6 @@ export const StockTicker = () => {
 
   // Save access token whenever it changes
   useEffect(() => {
-    console.log(accessToken)
     localStorage.setItem('githubAccessToken', JSON.stringify(accessToken));
   }, [accessToken]);
 
